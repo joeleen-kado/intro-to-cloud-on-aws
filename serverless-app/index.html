@@ -30,6 +30,7 @@
             const productName = document.getElementById('productName').value;
             const quantity = document.getElementById('quantity').value;
             const response = await fetch('YOUR_API_ENDPOINT', {
+               // MY API ENDPOINT https://pk0ha0mik1.execute-api.us-east-1.amazonaws.com/prod
                 method: 'POST',
                 body: JSON.stringify({ productName, quantity }),
                 headers: { 'Content-Type': 'application/json' }
